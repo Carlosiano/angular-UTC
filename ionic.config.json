@@ -1,0 +1,7 @@
+{
+  "name": "angular-UTC-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
