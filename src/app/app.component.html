@@ -1,3 +1,34 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<header
+  class="header" [class.active]="scrollY > 100" data-header
+  [scrollY]="scrollY"
+  [gambar]="gambar[0]"
+  [active]="active"
+  [toggleActiveClass]="toggleActiveClass"
+  [navLinks]="navLinks"
+></header>
+<main
+  [gambar]="gambar[0]"
+  [infoPMB]="infoPMB"
+  [kampus]="gambar[2].kampus"
+  [categories]="gambar[3].categories"
+  [fasilitas]="gambar[2].fasilitas"
+></main>
+<footer [gambar]="gambar[0]" class="footer"></footer>
+
+<!-- 
+        - #BACK TO TOP
+    -->
+
+<a
+  href="#top"
+  class="back-top-btn"
+  [class.active]="scrollY > 100"
+  aria-label="back top top"
+  data-back-top-btn
+>
+  <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+</a>
+
+<!--
+    <img [src]="gambar[0].heroBg" alt="sdfasdfaf">
+-->
