@@ -186,61 +186,11 @@
 
           <p class="section-text"></p>
 
-          <ul class="about-list">
+          <ul class="about-list" *ngFor="let item of alasanKuliah; let index = index">
             <li class="about-item">
               <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
-              <span class="span"
-                >Peluang magang dan bekerja di Silicon Valley dan Hollywood</span
+              <span class="span">{{item}}</span
               >
-            </li>
-
-            <li class="about-item">
-
-              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
-
-              <span class="span">
-                Perguruan Tingggi Terbaik di Indonesia pada Industrial
-                Application (WURI, 2023).
-              </span>
-            </li>
-
-            <li class="about-item">
-              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
-              <span class="span">
-                Model Perguruan Tinggi Private Entrepreneur Dunia oleh UNESCO
-              </span>
-            </li>
-            <li class="about-item">
-              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
-              <span class="span">
-                Alumni mudah mendapat pekerjaan (Employbility bintang 5 dari QS
-                Stars 2019)
-              </span>
-            </li>
-            <li class="about-item">
-              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
-              <span class="span">
-                Ditargetkan 30 % mahasiswa menjadi entrepreneur.
-              </span>
-            </li>
-            <li class="about-item">
-              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
-              <span class="span">
-                Menghasilkan produk berkualitas dunia dalam bidang film animasi,
-                game dan ICT
-              </span>
-            </li>
-            <li class="about-item">
-              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
-              <span class="span">
-                Memperoleh lebih dari 80 penghargaan internasional
-              </span>
-            </li>
-            <li class="about-item">
-              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
-              <span class="span">
-                Memiliki sertifikasi ISO 9001 Quality Managemen
-              </span>
             </li>
           </ul>
 

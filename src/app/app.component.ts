@@ -18,8 +18,44 @@ export class AppComponent {
   title = 'angular-UTC';
   gambar;
   scrollY: number = 0;
-  infoPMB;
-  navLinks;
+  infoPMB = [
+    'Ketentuan Dan Berkas PMB Universitas Amikom Yogyakarta T.A 2024/2025',
+    'Ketentuan Dan Berkas PMB Universitas Amikom Yogyakarta T.A 2024/2025',
+    'Ketentuan Dan Berkas PMB Universitas Amikom Yogyakarta T.A 2024/2025',
+  ];
+  navLinks = [
+    {
+      title: 'Beranda',
+      href: 'beranda',
+    },
+    {
+      title: 'Jenjang',
+      href: 'jenjang',
+    },
+    {
+      title: 'Mengapa UTC',
+      href: 'why',
+    },
+    {
+      title: 'Fasilitas',
+      href: 'fasilitas',
+    },
+    {
+      title: 'Info',
+      href: 'info',
+    },
+  ];
+  alasanKuliah: Array<string> = [
+    'Peluang magang dan bekerja di Silicon Valley dan Hollywood',
+    'Perguruan Tingggi Terbaik di Indonesia pada Industrial Application (WURI, 2023).',
+    'Model Perguruan Tinggi Private Entrepreneur Dunia oleh UNESCO',
+    'Alumni mudah mendapat pekerjaan (Employbility bintang 5 dari QS Stars 2019)',
+    'Ditargetkan 30 % mahasiswa menjadi entrepreneur.',
+    'Menghasilkan produk berkualitas dunia dalam bidang film animasi, game dan ICT',
+    'Memperoleh lebih dari 80 penghargaan internasional',
+    'Memiliki sertifikasi ISO 9001 Quality Managemen',
+  ];
+
   @HostListener('window:scroll', ['$event'])
   function(event: any) {
     this.scrollY = window.scrollY;
@@ -50,10 +86,12 @@ export class AppComponent {
         closeOutline: 'assets/images/ion-icons/close-outline.svg',
         personAddOutline: 'assets/images/ion-icons/person-add-outline.svg',
         menuOutline: 'assets/images/ion-icons/menu-outline.svg',
-        checkmarkDoneOutline: 'assets/images/ion-icons/checkmark-done-outline.svg',
+        checkmarkDoneOutline:
+          'assets/images/ion-icons/checkmark-done-outline.svg',
         play: 'assets/images/ion-icons/play.svg',
         chevronUp: 'assets/images/ion-icons/chevron-up.svg',
-        arrowForwardOutline: 'assets/images/ion-icons/arrow-forward-outline.svg',
+        arrowForwardOutline:
+          'assets/images/ion-icons/arrow-forward-outline.svg',
         logoFacebook: 'assets/images/ion-icons/logo-facebook.svg',
         logoLinkedin: 'assets/images/ion-icons/logo-linkedin.svg',
         logoInstagram: 'assets/images/ion-icons/logo-instagram.svg',
@@ -160,33 +198,5 @@ export class AppComponent {
         ],
       },
     ];
-
-    (this.infoPMB = [
-      'Ketentuan Dan Berkas PMB Universitas Amikom Yogyakarta T.A 2024/2025',
-      'Ketentuan Dan Berkas PMB Universitas Amikom Yogyakarta T.A 2024/2025',
-      'Ketentuan Dan Berkas PMB Universitas Amikom Yogyakarta T.A 2024/2025',
-    ]),
-      (this.navLinks = [
-        {
-          title: 'Beranda',
-          href: 'beranda',
-        },
-        {
-          title: 'Jenjang',
-          href: 'jenjang',
-        },
-        {
-          title: 'Mengapa UTC',
-          href: 'why',
-        },
-        {
-          title: 'Fasilitas',
-          href: 'fasilitas',
-        },
-        {
-          title: 'Info',
-          href: 'info',
-        },
-      ]);
   }
 }

@@ -15,6 +15,7 @@ export class MainComponent  implements OnInit {
   @Input() kampus:any
   @Input() categories:any
   @Input() fasilitas:any
+  @Input() alasanKuliah: any
   constructor() { }
 
   ngOnInit() {}
