@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-UTC-2": {
+    "angular-UTC": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-utc-2",
+            "outputPath": "dist/angular-utc",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-UTC-2:build:production"
+              "buildTarget": "angular-UTC:build:production"
             },
             "development": {
-              "buildTarget": "angular-UTC-2:build:development"
+              "buildTarget": "angular-UTC:build:development"
             }
           },
           "defaultConfiguration": "development"
