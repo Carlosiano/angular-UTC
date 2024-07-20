@@ -7,7 +7,7 @@
       class="section hero has-bg-image"
       id="beranda"
       aria-label="beranda"
-      [ngStyle]="{'background-image': 'url(' + gambar.heroBg + ')' }"
+      [style]="{'background-image': 'url(' + gambar.heroBg + ')' }"
     >
       <div class="container">
         <div class="hero-content">
@@ -27,9 +27,7 @@
 
             <a href="#" class="btn-second has-before">
               <span class="span">Panduan PMB</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"
-              ></ion-icon>
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.arrowForwardOutline + ')' }" aria-hidden="true"></div>
             </a>
           </div>
         </div>
@@ -190,17 +188,15 @@
 
           <ul class="about-list">
             <li class="about-item">
-              <ion-icon name="checkmark-done-outline" aria-hidden="true"
-              ></ion-icon>
-
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
               <span class="span"
                 >Peluang magang dan bekerja di Silicon Valley dan Hollywood</span
               >
             </li>
 
             <li class="about-item">
-              <ion-icon name="checkmark-done-outline" aria-hidden="true"
-              ></ion-icon>
+
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
 
               <span class="span">
                 Perguruan Tingggi Terbaik di Indonesia pada Industrial
@@ -209,51 +205,39 @@
             </li>
 
             <li class="about-item">
-              <ion-icon name="checkmark-done-outline" aria-hidden="true"
-              ></ion-icon>
-
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
               <span class="span">
                 Model Perguruan Tinggi Private Entrepreneur Dunia oleh UNESCO
               </span>
             </li>
             <li class="about-item">
-              <ion-icon name="checkmark-done-outline" aria-hidden="true"
-              ></ion-icon>
-
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
               <span class="span">
                 Alumni mudah mendapat pekerjaan (Employbility bintang 5 dari QS
                 Stars 2019)
               </span>
             </li>
             <li class="about-item">
-              <ion-icon name="checkmark-done-outline" aria-hidden="true"
-              ></ion-icon>
-
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
               <span class="span">
                 Ditargetkan 30 % mahasiswa menjadi entrepreneur.
               </span>
             </li>
             <li class="about-item">
-              <ion-icon name="checkmark-done-outline" aria-hidden="true"
-              ></ion-icon>
-
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
               <span class="span">
                 Menghasilkan produk berkualitas dunia dalam bidang film animasi,
                 game dan ICT
               </span>
             </li>
             <li class="about-item">
-              <ion-icon name="checkmark-done-outline" aria-hidden="true"
-              ></ion-icon>
-
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
               <span class="span">
                 Memperoleh lebih dari 80 penghargaan internasional
               </span>
             </li>
             <li class="about-item">
-              <ion-icon name="checkmark-done-outline" aria-hidden="true"
-              ></ion-icon>
-
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.checkmarkDoneOutline + ')' }" aria-hidden="true"></div>
               <span class="span">
                 Memiliki sertifikasi ISO 9001 Quality Managemen
               </span>
@@ -311,7 +295,8 @@
 
         <a href="#" class="btn has-before">
           <span class="span">Lihat lebih banyak</span>
-          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.arrowForwardOutline + ')' }" aria-hidden="true"></div>
         </a>
       </div>
     </section>
@@ -329,8 +314,8 @@
             <div class="blog-card">
               <div class="card-content">
                 <a href="#" class="card-btn" aria-label="read more">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"
-                  ></ion-icon>
+
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.arrowForwardOutline + ')' }" aria-hidden="true"></div>
                 </a>
                 <h3 class="h3">
                   <a href="#" class="card-title">
@@ -342,7 +327,8 @@
           </li>
         </ul>
         <a href="#" class="btn-second has-before">
-          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.arrowForwardOutline + ')' }" aria-hidden="true"></div>
         </a>
       </div>
     </section>
@@ -354,7 +340,7 @@
     <section
       class="video has-bg-image"
       aria-label="video"
-      [ngStyle]="{'background-image': 'url(' + gambar.videoBg + ')' }"
+      [style]="{'background-image': 'url(' + gambar.videoBg + ')' }"
     >
       <div class="container">
         <div class="video-card">
@@ -372,7 +358,8 @@
             />
 
             <button class="play-btn" aria-label="play video">
-              <ion-icon name="play" aria-hidden="true"></ion-icon>
+
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.play + ')' }" aria-hidden="true"></div>
             </button>
           </div>
 
@@ -405,7 +392,7 @@
       class="section blog has-bg-image"
       id="blog"
       aria-label="blog"
-      [ngStyle]="{'background-image': 'url(' + gambar.blogBG + ')' }"
+      [style]="{'background-image': 'url(' + gambar.blogBG + ')' }"
     >
       <div class="container">
         <p class="section-subtitle">Kampus</p>
@@ -431,8 +418,7 @@
 
               <div class="card-content">
                 <a href="#" class="card-btn" aria-label="read more">
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"
-                  ></ion-icon>
+              <div class="ion-icon" [style]="{'mask-image': 'url(' + gambar.arrowForwardOutline + ')' }" aria-hidden="true"></div>
                 </a>
 
                 <a href="#" class="card-subtitle">{{item.title}}</a>

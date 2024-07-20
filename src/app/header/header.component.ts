@@ -1,10 +1,14 @@
+import { NgFor } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'header',
+  standalone: true,
+  imports: [NgFor],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  styleUrl: './header.component.css'
 })
+
 export class HeaderComponent implements OnInit {
   @Input() scrollY = 0;
   @Input() gambar: any;
